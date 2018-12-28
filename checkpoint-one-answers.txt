@@ -1,0 +1,81 @@
+1. What data types do each of these values represent?
+
+"A Clockwork Orange"
+42
+09/02/1945
+98.7
+$15.99
+
+  A:
+    "A Clockwork Orange" = string
+    42 = integer
+    09/02/1945 = integer
+    98.7 = float
+    $15.99 = float
+
+2. Explain when a database would be used. Explain when a text file would be used.
+  
+  A:
+    A database would be used when an application needs to save, reuse, find or otherwise manipulate
+    data outside of the application. A text file would be used in an instance where data needed to be 
+    entered into a an application one time, and did not need to be manipulated to a large extent.
+
+3. Describe one difference between SQL and other programming languages.
+  A: 
+    SQL is a declarative language, which is different from many otherlanguages that are procedural.
+
+4. In your own words, explain how the pieces of a database system fit together at a high level.
+  A:
+    The pieces of a database fit together in 2 ways. One being columns, which dictate what type of data is displayed, 
+    and second being rows, which display individual entries of data that are arranged into the columns.
+
+5. Explain the meaning of table, row, column, and value.
+  A:
+    Table: A table is the structure containing rows, columns & values. 
+    Row: A row is an individual entry with values.
+    Column: A column describes what sort of value is stored in a specific entry.
+    Value: A value is the data being stored.
+
+6. List three data types that can be used in a table.
+  A:
+    1. a string
+    2. an object
+    3. an integer
+
+7. Given this payments table, provide an English description of the following queries and 
+include their results:
+     SELECT date, amount
+     FROM payments;
+      A:
+        What are the dates and amounts from all entries within payments?
+
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+      A: What are the amounts greater than 500 from payments?
+
+     SELECT *
+     FROM payments
+     WHERE payee = 'Mega Foods';
+      A: 
+        What is all the data from all the 'Mega Foods' entries within payments?
+
+8. Given this users table, write SQL queries using the following criteria and include the output:
+
+The email and sign-up date for the user named DeAndre Data.
+  A: 
+    SELECT signup
+    FROM users
+    WHERE name = DeAndre Data;
+
+The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+  A:
+    SELECT userid
+    FROM users 
+    WHERE email = aleesia.algorithm@uw.edu;
+
+All the columns for the user ID equal to 4.
+  A:
+    SELECT *
+    FROM users
+    WHERE userid = 4;
